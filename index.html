@@ -1,0 +1,281 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Survivor.io Beginner's Guide
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+
+ </head>
+ <body class="bg-gray-100 text-gray-900">
+  <header class="bg-blue-600 text-white p-4 fixed w-full top-0 z-10">
+   <div class="container mx-auto flex justify-between items-center">
+    <h1 class="text-2xl font-bold">
+     Survivor.io Beginner's Guide
+    </h1>
+    <nav class="flex space-x-4 items-center">
+     <a class="hover:underline" href="index.html">
+      Game Guides
+     </a>
+     <a class="hover:underline" href="about.html">
+      About Us
+     </a>
+     <div class="dropdown">
+      <span class="hover:underline cursor-pointer">
+       Community
+      </span>
+      <div class="dropdown-content">
+       <a href="https://www.facebook.com/groups/3182765335371398" target="_blank">
+        Facebook
+       </a>
+       <a href="https://discord.com/invite/survivorio" target="_blank">
+        Discord
+       </a>
+      </div>
+     </div>
+     <i class="fas fa-compress cursor-pointer" id="collapse-icon" onclick="toggleCollapse()">
+     </i>
+    </nav>
+   </div>
+  </header>
+  <div class="flex mt-16">
+   <nav class="bg-gray-600 text-white w-64 min-h-screen p-4 sticky-nav" id="nav">
+    <table class="w-full border-collapse">
+     <thead>
+      <tr>
+       <td class="border border-gray-300 bg-gray-700 text-white px-4 py-2">
+        <div class="bg-gray-700 text-white px-4 py-2 rounded w-full flex justify-between items-center">
+         Content
+         <i class="fas fa-eye-slash cursor-pointer" id="toggle-icon" onclick="toggleNav()">
+         </i>
+        </div>
+       </td>
+      </tr>
+     </thead>
+     <tbody id="nav-tbody">
+      <tr>
+       <td class="border border-gray-300 bg-gray-700 text-white px-4 py-2">
+        <a class="hover:underline" href="#getting-started">
+         Getting Started
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <td class="border border-gray-300 bg-gray-700 text-white px-4 py-2">
+        <a class="hover:underline" href="#surviving-the-waves">
+         Surviving the Waves
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <td class="border border-gray-300 bg-gray-700 text-white px-4 py-2">
+        <a class="hover:underline" href="#upgrading-and-evolution">
+         Upgrading and Evolution
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <td class="border border-gray-300 bg-gray-700 text-white px-4 py-2">
+        <a class="hover:underline" href="#tips-for-success">
+         Tips for Success
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <td class="border border-gray-300 bg-gray-700 text-white px-4 py-2">
+        <a class="hover:underline" href="#daily-rewards-and-events">
+         Daily Rewards and Events
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <td class="border border-gray-300 bg-gray-700 text-white px-4 py-2">
+        <a class="hover:underline" href="#upgrading-outside-the-game">
+         Upgrading Outside the Game
+        </a>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </nav>
+   <main class="container mx-auto p-4" id="main">
+    <section class="mb-8" id="welcome">
+     <h2 class="text-3xl font-bold mb-4">
+      Welcome to the Survivor.io Beginner's Guide
+     </h2>
+     <img alt="A welcoming image with a Survivor.io game theme, showing a character ready to face hordes of enemies." class="mb-4" height="400" src="C:\Users\Pongo\Downloads\test\survivorio-image-2.jpg" width="600"/>
+     <p class="mb-4">
+      If you’re a big fan of roguelike adventure games then you have probably found Survivor.io by now. It is tonnes of fun and, even better, it is available to be played on mobile when you are on the go. However, things get a little hairy when you first start as the hordes of enemies just keep coming. Read this Survivor.io Guide for all the Best Tips and Tricks for Beginners.
+     </p>
+    </section>
+    <section class="mb-8" id="getting-started">
+     <h2 class="text-2xl font-bold mb-4">
+      Getting Started
+     </h2>
+     <img alt="An image showing the main menu of Survivor.io, highlighting the different options available to players." class="mb-4" height="400" src="C:\Users\Pongo\Downloads\test\277389fc-7ce2-472c-95fd-64076d7fdd3e.jpg" width="600"/>
+     <p class="mb-4">
+      Step 1: Choose Your Gear
+     </p>
+     <p class="mb-4">
+      Before starting a run, equip your character with the best weapons, armor, and accessories available. Early on, focus on:
+     </p>
+     <ul class="list-disc list-inside mb-4">
+      <li>
+       Weapons: The Lightchaser or Kunai are excellent beginner choices.
+      </li>
+      <li>
+       Armor: Choose armor that boosts HP and provides crowd control benefits.
+      </li>
+      <li>
+       Accessories: Equip items that enhance healing, movement speed, or attack power.
+      </li>
+     </ul>
+     <p class="mb-4">
+      Step 2: Start Small
+     </p>
+     <p class="mb-4">
+      Begin with the easier chapters to learn enemy patterns and practice dodging. Progress to harder stages as you improve.
+     </p>
+    </section>
+    <section class="mb-8" id="surviving-the-waves">
+     <h2 class="text-2xl font-bold mb-4">
+      Surviving the Waves
+     </h2>
+     <img alt="An image showing a character in Survivor.io surrounded by waves of enemies, demonstrating movement and dodging techniques." class="mb-4" height="400" src="C:\Users\Pongo\Downloads\test\643x0w.jpg" width="600"/>
+     <p class="mb-4">
+      Movement Tips:
+     </p>
+     <ul class="list-disc list-inside mb-4">
+      <li>
+       Always stay mobile to avoid getting surrounded by enemies.
+      </li>
+      <li>
+       Lead enemies into groups to maximize the effectiveness of area-of-effect (AoE) skills.
+      </li>
+     </ul>
+     <p class="mb-4">
+      Skill Selection:
+     </p>
+     <p class="mb-4">
+      When leveling up, you’ll be presented with random skill options. Prioritize these:
+     </p>
+     <ul class="list-disc list-inside mb-4">
+      <li>
+       Primary Weapon Evolution: Focus on evolving your main weapon by collecting its compatible passive skill.
+      </li>
+      <li>
+       Example: Kunai evolves into the Spirit Shuriken when paired with the [Energy Cube].
+      </li>
+      <li>
+       AoE Damage Skills: Skills like Molotov and Lightning Emitter are great for crowd control.
+      </li>
+      <li>
+       Survivability Skills: Abilities like Forcefield or Healing Drone can save you in tough situations.
+      </li>
+     </ul>
+    </section>
+    <section class="mb-8" id="upgrading-and-evolution">
+     <h2 class="text-2xl font-bold mb-4">
+      Upgrading and Evolution
+     </h2>
+     <img alt="An image showing the upgrade and evolution screen in Survivor.io, highlighting the different upgrade paths and options." class="mb-4" height="400" src="C:\Users\Pongo\Downloads\test\maxresdefault.jpg" width="600"/>
+     <p class="mb-4">
+      Upgrading Skills:
+     </p>
+     <p class="mb-4">
+      Combine passive skills with active ones for powerful evolutions. For example:
+     </p>
+     <ul class="list-disc list-inside mb-4">
+      <li>
+       Guardian + Fitness Guide = Defender.
+      </li>
+      <li>
+       Lightning Emitter + Energy Cube = Thunderbolt Power Core.
+      </li>
+     </ul>
+     <p class="mb-4">
+      Weapon Evolution:
+     </p>
+     <p class="mb-4">
+      Upgrade your weapon to its max level during a run to unlock its evolution.
+     </p>
+    </section>
+    <section class="mb-8" id="tips-for-success">
+     <h2 class="text-2xl font-bold mb-4">
+      Tips for Success
+     </h2>
+     <img alt="An image showing a character successfully navigating through a challenging level in Survivor.io, collecting resources and avoiding enemies." class="mb-4" height="400" src="C:\Users\Pongo\Downloads\test\11889-Survivor.io_.jpg" width="600"/>
+     <p class="mb-4">
+      Here are some tips to help you succeed in Survivor.io:
+     </p>
+     <ul class="list-disc list-inside mb-4">
+      <li>
+       Always keep moving to avoid getting surrounded by enemies.
+      </li>
+      <li>
+       Prioritize upgrading your primary weapon for maximum damage output.
+      </li>
+      <li>
+       Use your special abilities wisely and save them for tough situations.
+      </li>
+      <li>
+       Collect health packs and other resources whenever you can.
+      </li>
+      <li>
+       Learn the attack patterns of different enemies to dodge their attacks effectively.
+      </li>
+     </ul>
+    </section>
+    <section class="mb-8" id="daily-rewards-and-events">
+     <h2 class="text-2xl font-bold mb-4">
+      Daily Rewards and Events
+     </h2>
+     <img alt="An image showing the daily rewards and special events screen in Survivor.io, highlighting the rewards available to players." class="mb-4" height="400" src="C:\Users\Pongo\Downloads\test\lh7s2dcwjpo91.webp" width="600"/>
+     <p class="mb-4">
+      Survivor.io offers daily rewards and special events that can give you a significant boost. Make sure to log in every day to claim your rewards. Participate in events to earn exclusive items and resources. These rewards can help you progress faster and become stronger.
+     </p>
+    </section>
+    <section class="mb-8" id="upgrading-outside-the-game">
+     <h2 class="text-2xl font-bold mb-4">
+      Upgrading Outside the Game
+     </h2>
+     <img alt="An image showing the in-game store and upgrade options in Survivor.io, highlighting the different items and upgrades available to players." class="mb-4" height="400" src="C:\Users\Pongo\Downloads\test\survivor-io-merging-equipment.webp" width="600"/>
+     <p class="mb-4">
+      Don't forget to upgrade your character outside of the main game. Use the resources you collect to enhance your abilities and equipment. This will make you stronger and better prepared for the challenges ahead. Keep an eye on the in-game store for special deals and items that can help you on your journey.
+     </p>
+    </section>
+    <section class="mb-8" id="comments">
+     <h2 class="text-2xl font-bold mb-4">
+      Comments
+     </h2>
+     <form id="comment-form" onsubmit="submitComment(event)">
+      <textarea class="w-full p-2 border border-gray-300 rounded mb-4" id="comment" placeholder="Write your comment here..." rows="4"></textarea>
+      <button class="bg-blue-600 text-white px-4 py-2 rounded" type="submit">
+       Submit
+      </button>
+     </form>
+     <div class="mt-4" id="comment-list">
+      <!-- Comments will be appended here -->
+     </div>
+    </section>
+   </main>
+  </div>
+  <footer class="bg-blue-600 text-white p-4">
+   <div class="container mx-auto text-center">
+    <p>
+     © 2023 Survivor.io Beginner's Guide. All rights reserved.
+    </p>
+   </div>
+  </footer>
+  <div class="back-to-top" id="back-to-top" onclick="scrollToTop()">
+   <i class="fas fa-arrow-up">
+   </i>
+  </div>
+ </body>
+</html>
